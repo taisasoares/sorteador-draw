@@ -35,5 +35,13 @@ function gerarNumeroAleatorio(numVezes, numMinimo, numMaximo, resultado) {
     i++;
   } while (i < numVezes);
 
+  var data = new Date();
+  var dataHora = data.getDate() + " de " + (data.getMonth() + 1) + " de " + data.getFullYear() + " às " + data.getHours() + ":" + data.getMinutes() + ":" + data.getSeconds();
+
+  dataHoraSorteio = dataHora;
+
   document.getElementById("numeroGerado").innerText = resultado;
+  document.getElementById("dataHora").innerText = dataHoraSorteio;
+  document.getElementById("numMinimo").innerText = numMinimo;
+  document.getElementById("numMaximo").innerText = numMaximo;
 }

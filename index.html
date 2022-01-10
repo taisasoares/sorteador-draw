@@ -2,31 +2,69 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style/style.css">
-  <title>Gerador de numeros aleatórios</title>
+  <script type="text/javascript" src="script.js" defer></script>
+  <title>Sorteio</title>
+  <link rel="icon" href="icon.png" type="image/icon type" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <meta charset="UTF-8" />
+  <meta name="description" content="Sorteio da Rifa de Casa Nova" />
+  <meta name="author" content="Taisa Soares" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
 <body>
-  <div class="container">
-    <h1>Sorteador de numeros</h1>
-    <h2 id="numeroGerado"></h2>
-    <div class="conteudo">
-      <p>
-        Sortear
-        <input type="number" id="iptVezes" placeholder="1" value="1" title="Quantos numeros deseja sortear">
-        numeros entre
+  <main role="main" id="main">
+    <img id="background" src="/assets/background.png">
+
+    <div id="sorteio">
+      <h1>Sorteio da Rifa de Casa Nova</h1>
+
+      <p>Sortear
+        <input type="number" id="iptVezes" placeholder="1" value="1" title="Quantos numeros deseja sortear?">
+        número(s)
+      </p>
+
+      <br />
+
+      <p>entre
         <input type="number" id="iptMinimo" placeholder="Mínimo" value="1" title="Numero mínimo">
         e
         <input type="number" id="iptMaximo" placeholder="Máximo" value="10" title="Numero máximo">
       </p>
+
+
     </div>
-    <br>
-    <button id="btnGerar" class="button" onclick="gerarNumeroAleatorio();">Gerar</button>
-  </div>
-  <script src="js/scripts.js"></script>
+
+    <a id="btnGerar" class="button" onclick="gerarNumeroAleatorio();">Sortear</a>
+
+    <p>O número sorteado foi:</p>
+    <h2 id="numeroGerado"></h2>
+
+    <br />
+
+    <p>Informações do sorteio</p>
+
+    <div id="dataHr">
+      <p>Data e Hora do sorteio:
+      <p id="dataHora"></p>
+      </p>
+    </div>
+
+    <div id="numMinMax">
+      <p>Sorteio entre:</p>
+      <p id="numMinimo"></p>
+      <p> e </p>
+      <p id="numMaximo"></p>
+    </div>
+
+  </main>
+
+  <footer role="contentinfo">&copy;Taisa</footer>
 </body>
 
 </html>
