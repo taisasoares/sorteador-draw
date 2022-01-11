@@ -13,9 +13,6 @@
 - Número sorteado
 - Data e hora do sorteio
 
-
-![sorteio](/assets/sorteio.png)
-
 Obs: sorteador criado para estudar JS e para realizar o sorteio da rifa de casa nova
 
 Aceito sugestões!
