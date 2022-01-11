@@ -4,7 +4,7 @@
 <head>
   <script type="text/javascript" src="script.js" defer></script>
   <title>Sorteio</title>
-  <link rel="icon" href="icon.png" type="image/icon type" />
+  <link rel="icon" href="/assets/dice.png" type="image/icon type" />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -24,6 +24,8 @@
     <div id="sorteio">
       <h1>Sorteio da Rifa de Casa Nova</h1>
 
+      <br />
+
       <p>Sortear
         <input type="number" id="iptVezes" placeholder="1" value="1" title="Quantos numeros deseja sortear?">
         número(s)
@@ -37,30 +39,19 @@
         <input type="number" id="iptMaximo" placeholder="Máximo" value="10" title="Numero máximo">
       </p>
 
-
+      <br />
     </div>
 
     <a id="btnGerar" class="button" onclick="gerarNumeroAleatorio();">Sortear</a>
 
     <p>O número sorteado foi:</p>
-    <h2 id="numeroGerado"></h2>
+    <h2 id="numeroGerado">0</h2>
 
     <br />
+    <br />
 
-    <p>Informações do sorteio</p>
-
-    <div id="dataHr">
-      <p>Data e Hora do sorteio:
-      <p id="dataHora"></p>
-      </p>
-    </div>
-
-    <div id="numMinMax">
-      <p>Sorteio entre: </p>
-      <p id="numMinimo"></p>
-      <p> e </p>
-      <p id="numMaximo"></p>
-    </div>
+    <p id="dH">Data e Hora do sorteio: </p>
+    <p id="dataHora"></p>
 
   </main>
 

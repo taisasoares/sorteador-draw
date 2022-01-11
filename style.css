@@ -20,8 +20,8 @@
   z-index: 0;
 }
 
-input{
-  width: 62px;
+input {
+  width: 68px;
   height: 38px;
   background: #FFFFFF;
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
@@ -33,18 +33,19 @@ input{
   cursor: pointer;
 
   padding: 6px;
-  padding-left: 14px;
+
+  text-align: center;
 }
 
-h1{
+h1 {
   font-size: 64px;
 }
 
-h2{
+h2 {
   font-size: 60px;
 }
 
-p, input{
+p, input {
   font-size: 24px;
 }
 
@@ -68,8 +69,8 @@ h1, h2, p, input, a, div {
   z-index: 1;
 }
 
-#dataHr, #numMinMax {
-  display: flex;
+#dH {
+  font-weight: 275;
 }
 
 /*estilização da seleção de caracteres*/
@@ -114,12 +115,12 @@ a {
 }
 
 #sorteio{
-  margin-top: 62px;
+  margin-top: 46px;
 }
 
 /*animação button*/
 
-button:hover {
+a:hover {
   transform: scale(1.05);
 }
 
