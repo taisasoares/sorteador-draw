@@ -87,7 +87,7 @@ input::placeholder {
 /*estilização da seleção de caracteres*/
 
 ::selection {
-  background-color: #fdf6e2;
+  background-color: #ec9c7f;
 }
 
 /*impede selecionar img*/
