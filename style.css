@@ -39,6 +39,9 @@ input {
 
 h1 {
   font-size: 64px;
+  line-height: 108%;
+
+  margin: 0 76px;
 }
 
 h2 {
@@ -71,6 +74,10 @@ h1, h2, p, input, a, div {
 
 input::placeholder {
   opacity: 50%;
+}
+
+#numeroGerado {
+  max-width: 60%;
 }
 
 #dH {
@@ -141,13 +148,47 @@ img {
 }
 
 /*breakpoints media query*/
+@media (max-width: 993px) {
+  #background{
+    display: none;
+  }
 
-@media (min-width: 480px) { } /*esse é o padrão, o projeto será programado com essa resolução inicial*/
-@media (min-width: 481px) and (max-width: 768px) { }
-@media (min-width: 769px) and (max-width: 992px) { }
-@media (min-width: 993px) and (max-width: 1200px) { }
-@media (min-width: 1201px) and (max-width: 1600px) { }
-@media (max-width: 1900px) { }
+  * {
+    background-color: #FEFAEE;
+  }
+
+  #footer {
+    position: relative;
+    margin-top: 26px;
+
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  input, .content  {
+    font-size: 18px;
+  }
+
+  #btnGerar {
+    width: 196px;
+    height: 42px;
+    
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 993px) {
+  #divDataHora{
+    margin-bottom: 26px;
+  }
+}
 
 /*estilização barra de rolagem*/
 

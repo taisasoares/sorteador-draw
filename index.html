@@ -22,21 +22,21 @@
     <img id="background" src="/assets/background.png">
 
     <div id="sorteio">
-      <h1>Sorteio da Rifa de Casa Nova</h1>
+      <h1 contenteditable="true">Sorteio da Rifa de Casa Nova</h1>
 
       <br />
 
       <p class="content">Sortear
-        <input type="number" id="iptVezes" placeholder="1" title="Quantos numeros deseja sortear?">
+        <input type="number" id="iptVezes" placeholder="1" value="1" title="Quantos numeros deseja sortear?">
         número(s)
       </p>
 
       <br />
 
       <p class="content">entre
-        <input type="number" id="iptMinimo" placeholder="1" title="Numero mínimo">
+        <input type="number" id="iptMinimo" placeholder="1" value="1" title="Numero mínimo">
         e
-        <input type="number" id="iptMaximo" placeholder="10" title="Numero máximo">
+        <input type="number" id="iptMaximo" placeholder="10" value="10" title="Numero máximo">
       </p>
 
       <br />
@@ -50,8 +50,10 @@
     <br />
     <br />
 
-    <p id="dH" class="content">Data e Hora do sorteio: </p>
-    <p id="dataHora" class="content"></p>
+    <div id="divDataHora">
+      <p id="dH" class="content">Data e Hora do sorteio: </p>
+      <p id="dataHora" class="content"></p>
+    </div>
 
   </main>
 

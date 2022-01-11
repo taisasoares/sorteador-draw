@@ -1,3 +1,5 @@
+window.alert("Você pode editar o nome do sorteio! Basta clicar em cima do nome atual, apagar e adicionar o nome desejado! Ao recarregar a página, o nome do sorteio voltará ao default!");
+
 function gerarNumeroAleatorio(numVezes, numMinimo, numMaximo, resultado) {
 
   var numVezes = parseInt(document.getElementById("iptVezes").value);
