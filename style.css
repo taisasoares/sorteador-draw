@@ -45,7 +45,7 @@ h2 {
   font-size: 60px;
 }
 
-p, input {
+input, .content  {
   font-size: 24px;
 }
 
@@ -69,6 +69,10 @@ h1, h2, p, input, a, div {
   z-index: 1;
 }
 
+input::placeholder {
+  opacity: 50%;
+}
+
 #dH {
   font-weight: 275;
 }
@@ -87,7 +91,7 @@ img {
 
 /*reset button*/
 
-a {
+#btnGerar {
   outline: none;
   border: none;
 
@@ -120,8 +124,20 @@ a {
 
 /*animação button*/
 
-a:hover {
+#btnGerar:hover {
   transform: scale(1.05);
+}
+
+#footer {
+  position: fixed;
+  bottom: 8px;
+  margin-left: 8px;
+  
+  font-size: 16px;
+}
+
+#linkFooter {
+  color:#B25D3E
 }
 
 /*breakpoints media query*/

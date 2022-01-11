@@ -26,17 +26,17 @@
 
       <br />
 
-      <p>Sortear
-        <input type="number" id="iptVezes" placeholder="1" value="1" title="Quantos numeros deseja sortear?">
+      <p class="content">Sortear
+        <input type="number" id="iptVezes" placeholder="1" title="Quantos numeros deseja sortear?">
         número(s)
       </p>
 
       <br />
 
-      <p>entre
-        <input type="number" id="iptMinimo" placeholder="Mínimo" value="1" title="Numero mínimo">
+      <p class="content">entre
+        <input type="number" id="iptMinimo" placeholder="1" title="Numero mínimo">
         e
-        <input type="number" id="iptMaximo" placeholder="Máximo" value="10" title="Numero máximo">
+        <input type="number" id="iptMaximo" placeholder="10" title="Numero máximo">
       </p>
 
       <br />
@@ -44,18 +44,20 @@
 
     <a id="btnGerar" class="button" onclick="gerarNumeroAleatorio();">Sortear</a>
 
-    <p>O número sorteado foi:</p>
+    <p class="content">O número sorteado foi:</p>
     <h2 id="numeroGerado">0</h2>
 
     <br />
     <br />
 
-    <p id="dH">Data e Hora do sorteio: </p>
-    <p id="dataHora"></p>
+    <p id="dH" class="content">Data e Hora do sorteio: </p>
+    <p id="dataHora" class="content"></p>
 
   </main>
 
-  <footer role="contentinfo">&copy;Taisa</footer>
+  <footer role="contentinfo" id="footer">
+    <p>Feito com ❤ por <a href="https://github.com/taisasoares" id="linkFooter">Taisa Soares</a></p>
+  </footer>
 </body>
 
 </html>
