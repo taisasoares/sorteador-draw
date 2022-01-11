@@ -1,5 +1,9 @@
 # Sorteador de Números
 
+### Tecnologias utilizadas
+- HTML
+- CSS
+- JavaScript
 ### Modo de usar:
 1. Escolha a quantidade de números a ser sorteado
 2. Defina o range
